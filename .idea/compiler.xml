@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="turing_machine" target="1.5" />
+      <module name="turing_machine" target="7" />
     </bytecodeTargetLevel>
   </component>
 </project>
