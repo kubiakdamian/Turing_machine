@@ -19,6 +19,8 @@ class TuringMachine {
             TransitionTable transitionTable = getTransitionByState(currentState);
             Transition transition;
 
+            printCurrentData(number, i, currentState);
+
             if (number.charAt(i) == '0') {
                 transition = transitionTable.getTransitionFor0();
                 increasedNumber.add(transition.getValue());
@@ -95,5 +97,9 @@ class TuringMachine {
         increasedNumber = new ArrayList<>();
         statesHistory = new ArrayList<>();
         currentState = State.Q0;
+    }
+
+    private void printCurrentData(String number, int i, State currentState) {
+        System.out.println("Current position: " + number.charAt(i) + " Current state: " + currentState.getName());
     }
 }
